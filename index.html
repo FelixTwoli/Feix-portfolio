@@ -2,77 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Websites</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <a href="#" class="logo">Two<span>f</span>lix.</a>
-
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class='bx bx-menu' id="menu-icon">
-
-
+    <nav id="desktop-nav">
+        <div class="logo">Twoli</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
         </div>
-
-    </header>
-
-    <!-- Home section design-->
-    <section class="home" id="home"> 
-        <div class="home-content">
-            <div class="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Twoli</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <h1>Felix</h1>
-            <h3>Software<span> Developer.</span></h3>
-            <p>I specialize in creating dynamic and responsive web applications using HTML, CSS, and JavaScript. 
-                With a keen eye for design and user experience, I collaborate closely with UX/UI designers to ensure that every element of the application is both visually appealing and functional. 
-                I have experience working with a variety of front-end frameworks such as React, Angular, and Svelte,
-                and am comfortable working with back-end technologies like Node.js and MongoDB.</p>
-            <div class="button">
-                <a href="#" class="btn">Say Hello</a>
-                <a href="#" class="btn2"><span><i class='bx bx-play'></i></span>Watch my work</a>
-
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
-
-    </section>
-
-    <!-- About section design-->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.jpg" alt="about">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Innovative Software Engineer</h4>
-            <p>As a front-end software developer, I have been creating intuitive and engaging user interfaces, optimizing website performance, 
-                improving accessibility, and increasing conversion rates. I have successful created visually stunning and responsive web applications that provide seamless user experiences across devices, while also utilizing modern technologies and frameworks to streamline development processes and enhance code quality. 
-                Additionally, I have contributed to open-source projects and create my own, demonstrating my proficiency and dedication to this field.
-                </p>
-                <a href="#" class="btn">More About</a>
-        </div>
-
-
-    </section>
-    <!-- custom js link -->
-    <script type="text/javascript" src="js/script.js"></script>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+nav, .nav-links {
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    max-width: 60rem;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 1.3rem;
+    margin-right: 15rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    max-height: 0vh;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+
+}
+
+
+
